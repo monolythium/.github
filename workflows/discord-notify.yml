@@ -1,0 +1,92 @@
+name: Discord Notify
+
+on:
+  push:
+  pull_request:
+  issues:
+  create:
+  delete:
+  release:
+  check_run:
+  workflow_job:
+  fork:
+  watch:
+    types: [started]
+  public:
+  member:
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Notify Discord
+        env:
+          WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          E: ${{ github.event_name }}
+          A: ${{ github.event.action }}
+          R: ${{ github.repository }}
+          REF: ${{ github.ref_name }}
+        run: |
+          set -e
+
+          ICON="📌"
+          TEXT="$R"
+
+          case "$E" in
+            push)
+              ICON="✅"
+              TEXT="$R → $REF"
+              ;;
+            pull_request)
+              ICON="🔁"
+              TEXT="PR ${A}"
+              ;;
+            issues)
+              ICON="🐛"
+              TEXT="Issue ${A}"
+              ;;
+            create)
+              ICON="🌱"
+              TEXT="Created ${GITHUB_EVENT_REF_TYPE:-ref} ${GITHUB_EVENT_REF:-}"
+              ;;
+            delete)
+              ICON="🧨"
+              TEXT="Deleted ${GITHUB_EVENT_REF_TYPE:-ref} ${GITHUB_EVENT_REF:-}"
+              ;;
+            release)
+              ICON="🏷️"
+              TEXT="Release ${A}"
+              ;;
+            check_run)
+              ICON="🧪"
+              TEXT="Checks ${A}"
+              ;;
+            workflow_job)
+              STATUS="${{ github.event.workflow_job.status }}"
+              ICON="🤖"
+              [ "$STATUS" = "completed" ] && ICON="🤖✅"
+              TEXT="Workflow $STATUS"
+              ;;
+            fork)
+              ICON="🍴"
+              TEXT="Forked"
+              ;;
+            watch)
+              ICON="⭐"
+              TEXT="Star"
+              ;;
+            public)
+              ICON="🌍"
+              TEXT="Now public"
+              ;;
+            member)
+              ICON="👤"
+              TEXT="Collaborator ${A}"
+              ;;
+          esac
+
+          MSG="$ICON **$TEXT**"
+
+          curl -sS -X POST -H "Content-Type: application/json" \
+            -d "{\"content\":\"$MSG\"}" \
+            "$WEBHOOK" >/dev/null
