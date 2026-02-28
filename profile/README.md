@@ -30,8 +30,8 @@
 |---------|----------|-------------:|-----|
 | Localnet | `mono-local-1` | 262145 | `0x40001` |
 | Sprintnet | `mono-sprint-1` | 262146 | `0x40002` |
-| Testnet | `mono-test-1` | 262147 | `0x40003` |
-| Mainnet | `mono-1` | 262148 | `0x40004` |
+| Testnet | `mono_6940-1` | 6940 | `0x1B1C` |
+| Mainnet | `mono_6941-1` | 6941 | `0x1B1D` |
 
 > **Important:** All networks require the official `genesis.json`. Do not start your own chain.
 
@@ -95,7 +95,7 @@ We take security seriously. If you discover a vulnerability:
 
 1. **Do NOT** open a public issue
 2. Use [GitHub Security Advisories](https://github.com/monolythium/mono-core/security/advisories) to report privately
-3. Or email: `security@monolythium.com` (placeholder)
+3. Or email: `security@monolythium.com`
 
 See [SECURITY.md](https://github.com/monolythium/mono-core/blob/main/SECURITY.md) for our full security policy.
 
