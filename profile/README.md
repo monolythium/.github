@@ -1,26 +1,40 @@
-<!-- Banner placeholder: Replace with actual banner image once available -->
-<!-- ![Monolythium Banner](https://raw.githubusercontent.com/monolythium/.github/main/profile/assets/banner.png) -->
+![Monolythium](https://raw.githubusercontent.com/mono-labs-org/.github/prod/media/github-banners/monolythium/monolythium.png)
 
 <div align="center">
 
 # Monolythium
 
-**Cosmos SDK + CometBFT + EVM L1 with deterministic finality and EVM JSON-RPC**
+**Layer 1 blockchain powered by LythiumBFT — Cosmos SDK + EVM with deterministic finality**
 
 [![Docs](https://img.shields.io/badge/docs-docs.monolythium.com-blue)](https://docs.monolythium.com)
-[![License](https://img.shields.io/badge/license-Apache%202.0-green)](https://github.com/monolythium/mono-core/blob/main/LICENSE)
 
 </div>
 
 ---
 
-## Start Here
+## Repositories
+
+### Chain
 
 | Repository | Description |
 |------------|-------------|
-| [mono-core](https://github.com/monolythium/mono-core) | Protocol source, operator kits, and network configurations |
-| [mono-commander](https://github.com/monolythium/mono-commander) | TUI-first CLI tool for node operators (`monoctl`) |
-| [docs-monolythium](https://github.com/monolythium/docs-monolythium) | Documentation site source |
+| [mono-chain](https://github.com/monolythium/mono-chain) | LythiumBFT chain node (`monod`) |
+| [mono-commander](https://github.com/monolythium/mono-commander) | TUI-first CLI for node operators (`monoctl`) |
+| [networks](https://github.com/monolythium/networks) | Network configurations and genesis files |
+| [validators](https://github.com/monolythium/validators) | Validator dashboard and performance tracking |
+| [mono-core-peers](https://github.com/monolythium/mono-core-peers) | Peer registry for network bootstrapping |
+| [mono-chain-registry](https://github.com/monolythium/mono-chain-registry) | Chain metadata registry (chain IDs, RPCs, assets) |
+
+### Apps & Tools
+
+| Repository | Description |
+|------------|-------------|
+| [browser-wallet](https://github.com/monolythium/browser-wallet) | Browser extension wallet (Chrome, Firefox, Edge) |
+| [desktop-wallet](https://github.com/monolythium/desktop-wallet) | Desktop wallet (macOS, Windows, Linux) |
+| [mobile-wallet](https://github.com/monolythium/mobile-wallet) | Mobile wallet (iOS, Android) |
+| [monoscan](https://github.com/monolythium/monoscan) | Block explorer with EVM and Cosmos support |
+| [guardian](https://github.com/monolythium/guardian) | Automated security scanner |
+| [api-utils](https://github.com/monolythium/api-utils) | Shared TypeScript utilities for Monolythium apps |
 
 ---
 
