@@ -2,10 +2,6 @@
 
 <div align="center">
 
-# Monolythium
-
-**Layer 1 blockchain powered by LythiumBFT — Cosmos SDK + EVM with deterministic finality**
-
 [![Docs](https://img.shields.io/badge/docs-docs.monolythium.com-blue)](https://docs.monolythium.com)
 
 </div>
