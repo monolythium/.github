@@ -30,7 +30,15 @@ Monarch CLI, or the old Monoscan have been frozen under
 |------------|------------|------|
 | [chain-registry](https://github.com/monolythium/chain-registry) | Public | Source of truth for current network metadata, RPC endpoints, peers, and explorers. |
 | [mono-core-sdk](https://github.com/monolythium/mono-core-sdk) | Public | Official Rust and TypeScript SDK for current Monolythium integrations. |
+| [lyth_mcp](https://github.com/monolythium/lyth_mcp) | Public | MCP server for live-chain reads, agent runbooks, and local agent wallets. |
 | [monoscan](https://github.com/monolythium/monoscan) | Private | Current Monoscan explorer for `testnet-69420`. |
+| [website](https://github.com/monolythium/website) | Private | Public website for Monolythium v2. |
+| [browser-wallet](https://github.com/monolythium/browser-wallet) | Private | Browser extension wallet. |
+| [desktop-wallet](https://github.com/monolythium/desktop-wallet) | Private | Desktop wallet. |
+| [mobile-wallet](https://github.com/monolythium/mobile-wallet) | Private | Mobile wallet. |
+| [monarch-desktop](https://github.com/monolythium/monarch-desktop) | Private | Validator and cluster operator GUI. |
+| [monarch-mobile](https://github.com/monolythium/monarch-mobile) | Private | Phone companion for Monarch OS and Monarch Desktop. |
+| [monarch-os-talos](https://github.com/monolythium/monarch-os-talos) | Private | Talos-based signed OS for Monolythium validators. |
 | [monolythium-rs](https://github.com/monolythium/monolythium-rs) | Private | Legacy-compatible Rust crates; new integrations should use `mono-core-sdk`. |
 | [guardian](https://github.com/monolythium/guardian) | Private | Security monitoring and repository hygiene automation. |
 | [api-utils](https://github.com/monolythium/api-utils) | Private | Shared API utilities for current Monolythium services. |
@@ -40,8 +48,8 @@ Monarch CLI, or the old Monoscan have been frozen under
 
 Some current development repositories remain in
 [monolythium-vision](https://github.com/monolythium-vision) until they are ready
-to become canonical under this organization. That queue includes the chain node,
-wallets, operator tooling, websites, docs, and whitepaper work.
+to become canonical under this organization. That queue currently includes the
+chain node, whitepaper, Mono Labs corporate site, and design archive.
 
 When a repository graduates, the old v1 name is archived first if needed, then
 the current repository is transferred here with its history intact.

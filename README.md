@@ -7,6 +7,7 @@ Current public entry points:
 
 - `chain-registry`: current network metadata for `testnet-69420`
 - `mono-core-sdk`: official Rust and TypeScript SDK
+- `lyth_mcp`: MCP server for live-chain reads and agent runbooks
 - `.github/profile/README.md`: public organization profile
 - `SECURITY.md`: organization-wide vulnerability reporting policy
 
