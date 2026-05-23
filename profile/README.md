@@ -1,150 +1,85 @@
-![Monolythium](https://raw.githubusercontent.com/mono-labs-org/.github/prod/media/github-banners/monolythium/monolythium.png)
+![Monolythium](https://raw.githubusercontent.com/monolythium/.github/prod/logo/monolythium/svg/Monolythium-Monolythium.svg)
 
 <div align="center">
 
-[![Docs](https://img.shields.io/badge/docs-docs.monolythium.com-blue)](https://docs.monolythium.com)
+[![Chain registry](https://img.shields.io/badge/registry-testnet--69420-blue)](https://github.com/monolythium/chain-registry)
+[![SDK](https://img.shields.io/badge/sdk-mono--core--sdk-blue)](https://github.com/monolythium/mono-core-sdk)
 
 </div>
 
 ---
 
-## Repositories
+## Monolythium
 
-### Chain
+Monolythium is the canonical GitHub organization for the current Monolythium
+protocol, SDK, explorer, and shared infrastructure.
 
-| Repository | Description |
-|------------|-------------|
-| [mono-chain](https://github.com/monolythium/mono-chain) | LythiumBFT chain node (`monod`) |
-| [mono-commander](https://github.com/monolythium/mono-commander) | TUI-first CLI for node operators (`monoctl`) |
-| [networks](https://github.com/monolythium/networks) | Network configurations and genesis files |
-| [validators](https://github.com/monolythium/validators) | Validator dashboard and performance tracking |
-| [mono-core-peers](https://github.com/monolythium/mono-core-peers) | Peer registry for network bootstrapping |
-| [mono-chain-registry](https://github.com/monolythium/mono-chain-registry) | Chain metadata registry (chain IDs, RPCs, assets) |
+The active public network is `testnet-69420` with chain ID `69420`. Network
+metadata, RPC endpoints, genesis hashes, and peer bootstrap data live in the
+canonical [chain registry](https://github.com/monolythium/chain-registry).
 
-### Apps & Tools
-
-| Repository | Description |
-|------------|-------------|
-| [browser-wallet](https://github.com/monolythium/browser-wallet) | Browser extension wallet (Chrome, Firefox, Edge) |
-| [desktop-wallet](https://github.com/monolythium/desktop-wallet) | Desktop wallet (macOS, Windows, Linux) |
-| [mobile-wallet](https://github.com/monolythium/mobile-wallet) | Mobile wallet (iOS, Android) |
-| [monoscan](https://github.com/monolythium/monoscan) | Block explorer with EVM and Cosmos support |
-| [guardian](https://github.com/monolythium/guardian) | Automated security scanner |
-| [api-utils](https://github.com/monolythium/api-utils) | Shared TypeScript utilities for Monolythium apps |
+Legacy v1 / Cosmos-EVM repositories that used `mono_6940-1`, `6940`, `6941`,
+Monarch CLI, or the old Monoscan have been frozen under
+[mono-labs-archive](https://github.com/mono-labs-archive).
 
 ---
 
-## Networks
+## Canonical Repositories
 
-| Network | Chain ID | EVM Chain ID | Hex |
-|---------|----------|-------------:|-----|
-| Localnet | `mono-local-1` | 262145 | `0x40001` |
-| Sprintnet | `mono-sprint-1` | 262146 | `0x40002` |
-| Testnet | `mono_6940-1` | 6940 | `0x1B1C` |
-| Mainnet | `mono_6941-1` | 6941 | `0x1B1D` |
+| Repository | Visibility | Role |
+|------------|------------|------|
+| [chain-registry](https://github.com/monolythium/chain-registry) | Public | Source of truth for current network metadata, RPC endpoints, peers, and explorers. |
+| [mono-core-sdk](https://github.com/monolythium/mono-core-sdk) | Public | Official Rust and TypeScript SDK for current Monolythium integrations. |
+| [monoscan](https://github.com/monolythium/monoscan) | Private | Current Monoscan explorer for `testnet-69420`. |
+| [monolythium-rs](https://github.com/monolythium/monolythium-rs) | Private | Legacy-compatible Rust crates; new integrations should use `mono-core-sdk`. |
+| [guardian](https://github.com/monolythium/guardian) | Private | Security monitoring and repository hygiene automation. |
+| [api-utils](https://github.com/monolythium/api-utils) | Private | Shared API utilities for current Monolythium services. |
+| [.github](https://github.com/monolythium/.github) | Public | Organization profile, security policy, and default contribution templates. |
 
-> **Important:** All networks require the official `genesis.json`. Do not start your own chain.
+## Migration Queue
+
+Some current development repositories remain in
+[monolythium-vision](https://github.com/monolythium-vision) until they are ready
+to become canonical under this organization. That queue includes the chain node,
+wallets, operator tooling, websites, docs, and whitepaper work.
+
+When a repository graduates, the old v1 name is archived first if needed, then
+the current repository is transferred here with its history intact.
 
 ---
 
-## Node Operators
+## Network
 
-### Seed Nodes
+| Network | Chain ID | Status | Source |
+|---------|---------:|--------|--------|
+| `testnet-69420` | `69420` | Live development testnet | [`chains/testnet-69420.toml`](https://github.com/monolythium/chain-registry/blob/master/chains/testnet-69420.toml) |
 
-DNS-based seed discovery is available for all public networks:
-
-```
-seed1.<network>.mononodes.xyz
-seed2.<network>.mononodes.xyz
-seed3.<network>.mononodes.xyz
-```
-
-Replace `<network>` with `sprintnet`, `testnet`, or `mainnet`.
-
-### Peer Registry
-
-The peer registry (`peers.json`) provides bootstrap peers for each network. Each entry includes:
-- `chain_id` for network identification
-- `genesis_sha256` for genesis verification
-
-> Peer registries are for operator convenience only and do not affect consensus.
-
-### Quick Start
+Quick registry check:
 
 ```bash
-# Install Mono Commander
-go install github.com/monolythium/mono-commander/cmd/monoctl@latest
-
-# Launch the interactive TUI
-monoctl
-
-# Or join a network via CLI
-monoctl join --network Sprintnet --home ~/.monod
+curl -s https://raw.githubusercontent.com/monolythium/chain-registry/master/chains/testnet-69420.toml
 ```
 
----
-
-## Developers
-
-### EVM
-
-- **MetaMask / Web3 wallets**: Connect using the EVM JSON-RPC endpoint
-- **Chain ID**: Use the EVM Chain ID from the networks table above
-- **RPC endpoints**: See network-specific documentation
-
-### Cosmos Native
-
-- **Keplr / Leap**: Native Cosmos wallet support for staking and governance
-- **CLI**: Use `monod` for direct chain interaction
+SDK consumers should prefer
+[`@monolythium/core-sdk`](https://github.com/monolythium/mono-core-sdk) and its
+registry helpers instead of hard-coding RPC endpoints.
 
 ---
 
 ## Security
 
-If you discover a security vulnerability in any Monolythium product:
+Please report security issues privately through
+[GitHub Security Advisories](https://github.com/monolythium/.github/security/advisories/new).
+Do not open public issues for vulnerabilities.
 
-1. **Report it** at [issues.monolythium.com](https://issues.monolythium.com) (preferred) or via [GitHub Security Advisories](https://github.com/monolythium/mono-core/security/advisories)
-2. **Do NOT** open a public issue
-3. **Test on testnet only** — all contracts are deployed 1:1 on testnet and mainnet
-
-We provide [safe harbor](https://docs.monolythium.com/ecosystem/bug-bounty#safe-harbor) for good-faith security researchers under CFAA and equivalent laws. Valid findings are eligible for LYTH token rewards.
-
-See our [Bug Bounty Program](https://docs.monolythium.com/ecosystem/bug-bounty) and [Security Policy](https://github.com/monolythium/.github/blob/prod/SECURITY.md) for full details.
+See the [organization security policy](https://github.com/monolythium/.github/blob/prod/SECURITY.md)
+for scope, reporting expectations, and safe-harbor terms.
 
 ---
 
 ## Contributing
 
-We welcome contributions! Please review:
-
-- [mono-core CONTRIBUTING.md](https://github.com/monolythium/mono-core/blob/main/CONTRIBUTING.md)
-- [mono-commander CONTRIBUTING.md](https://github.com/monolythium/mono-commander/blob/main/CONTRIBUTING.md)
-
-### Guidelines
-
-- Follow Go conventions and formatting (`gofmt`)
-- Add tests for new functionality
-- Keep commits focused and atomic
-- Update documentation as needed
-
----
-
-## Status
-
-### Emergency Protocol
-
-> **No rollback.** Emergency response: **HALT → PATCH → UPGRADE → RESTART**
-
-### Current Phase
-
-- **Sprintnet**: Active development network
-- **Testnet**: Coming soon (mainnet-mirror configuration)
-- **Mainnet**: Planned
-
----
-
-<div align="center">
-
-**[Documentation](https://docs.monolythium.com)** · **[GitHub](https://github.com/monolythium)** · **[Discord](https://discord.gg/monolythium)**
-
-</div>
+The current protocol and application stack is still moving from research into
+public implementation. Small documentation fixes and clear bug reports are
+welcome. Consensus, cryptography, economic-parameter, and wire-protocol changes
+need prior discussion before implementation.

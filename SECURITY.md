@@ -2,36 +2,49 @@
 
 ## Reporting a Vulnerability
 
-If you discover a security vulnerability in any Monolythium ecosystem product, please report it through our official bug bounty platform:
+Please report security vulnerabilities privately through GitHub Security
+Advisories:
 
-**https://issues.monolythium.com**
+https://github.com/monolythium/.github/security/advisories/new
 
-### How to Report
+Do not open a public issue for security matters.
 
-1. Visit [issues.monolythium.com](https://issues.monolythium.com) and connect your wallet
-2. Select the affected product and describe the vulnerability
-3. Include steps to reproduce, impact assessment, and any proof of concept
+## What to Include
 
-### What to Expect
+- Affected repository, component, version, branch, or commit.
+- A clear description of the issue and expected impact.
+- Reproduction steps, proof-of-concept code, logs, or screenshots where useful.
+- Whether the issue affects live `testnet-69420` infrastructure.
+- Your preferred contact method for follow-up questions.
 
-- We will acknowledge your report within **7 business days**
-- Valid findings are eligible for **LYTH token rewards** based on severity
-- We will work with you to understand and resolve the issue
+Redact secrets, private keys, API tokens, personally identifying information,
+and third-party data before sending a report.
 
-### Safe Harbor
+## Scope
 
-We will not pursue legal action against individuals who conduct security research in good faith and in compliance with our [Bug Bounty Policy](https://docs.monolythium.com/ecosystem/bug-bounty). Activities conducted consistent with this policy constitute authorized conduct under the Computer Fraud and Abuse Act (CFAA) and equivalent international laws.
+This policy applies to current repositories under the `monolythium`
+organization, including the chain registry, SDK, explorer, shared services,
+security automation, and organization templates.
 
-### Guidelines
+Legacy v1 repositories under `mono-labs-archive` are frozen and read-only. If a
+legacy issue still creates risk for active users, infrastructure, secrets, or
+current migration paths, report it privately through the same advisory channel.
 
-- **Test on testnet only** — all contracts are deployed 1:1 on testnet and mainnet
-- Do not access, modify, or exfiltrate user data or funds
-- Do not perform denial-of-service attacks
-- Do not use social engineering against team members or users
-- Report vulnerabilities promptly and do not disclose publicly before a fix is deployed or 90 days have passed
+## What to Expect
 
-### Scope
+We aim to acknowledge new reports within 72 hours. After triage, we will provide
+a rough assessment of impact, affected scope, and expected remediation path.
 
-All products in the Monolythium ecosystem are in scope, including smart contracts, wallets (browser, desktop, mobile), web applications (MonoHub, Monoscan, MonoPlay), backend services, and documentation.
+Critical issues affecting live infrastructure or user funds are prioritized
+above routine maintenance.
 
-For full details, see our [Bug Bounty Program](https://docs.monolythium.com/ecosystem/bug-bounty).
+## Safe Harbor
+
+Good-faith security research conducted in line with this policy will not result
+in legal action from the Monolythium organization. Researchers must:
+
+- Avoid privacy violations, data destruction, and disruption of live systems.
+- Avoid denial-of-service testing against public infrastructure.
+- Avoid social engineering or phishing against contributors, operators, or users.
+- Report vulnerabilities promptly and allow reasonable time for remediation
+  before public disclosure.

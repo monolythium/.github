@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/monolythium/.github/security/advisories/new
+    about: Report a security issue privately. Do not open a public issue.
+  - name: General question or discussion
+    url: https://github.com/monolythium
+    about: For open-ended discussion, use the relevant repository's Discussions tab if enabled.
