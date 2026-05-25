@@ -1,0 +1,397 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-05-25T01:08:00.735Z",
+  "org": "monolythium",
+  "window_days": 90,
+  "notes": "Aggregate engineering activity. No commit messages, file paths, branch names, hashes, or PR/issue contents are exposed. Forks and archived repos excluded from totals.",
+  "totals": {
+    "repos": 22,
+    "active_repos": 22,
+    "public_repos": 5,
+    "private_repos": 17,
+    "commits_7d": 761,
+    "commits_30d": 2219,
+    "commits_90d": 2526,
+    "lines_added_30d": 922446,
+    "lines_removed_30d": 113408,
+    "lines_added_90d": 1237091,
+    "lines_removed_90d": 149492,
+    "active_contributors_30d": 6,
+    "active_contributors_90d": 6
+  },
+  "weekly": [
+    {
+      "week": 1771718400,
+      "week_start": "2026-02-22",
+      "commits": 25,
+      "added": 7345,
+      "removed": 495
+    },
+    {
+      "week": 1772323200,
+      "week_start": "2026-03-01",
+      "commits": 2,
+      "added": 488,
+      "removed": 49
+    },
+    {
+      "week": 1772928000,
+      "week_start": "2026-03-08",
+      "commits": 7,
+      "added": 324,
+      "removed": 150
+    },
+    {
+      "week": 1773532800,
+      "week_start": "2026-03-15",
+      "commits": 2,
+      "added": 1030,
+      "removed": 3
+    },
+    {
+      "week": 1774742400,
+      "week_start": "2026-03-29",
+      "commits": 4,
+      "added": 2278,
+      "removed": 2
+    },
+    {
+      "week": 1775952000,
+      "week_start": "2026-04-12",
+      "commits": 61,
+      "added": 122165,
+      "removed": 1985
+    },
+    {
+      "week": 1776556800,
+      "week_start": "2026-04-19",
+      "commits": 269,
+      "added": 229603,
+      "removed": 36484
+    },
+    {
+      "week": 1777161600,
+      "week_start": "2026-04-26",
+      "commits": 373,
+      "added": 180306,
+      "removed": 23785
+    },
+    {
+      "week": 1777766400,
+      "week_start": "2026-05-03",
+      "commits": 260,
+      "added": 146846,
+      "removed": 16691
+    },
+    {
+      "week": 1778371200,
+      "week_start": "2026-05-10",
+      "commits": 665,
+      "added": 247563,
+      "removed": 21876
+    },
+    {
+      "week": 1778976000,
+      "week_start": "2026-05-17",
+      "commits": 620,
+      "added": 224182,
+      "removed": 20495
+    },
+    {
+      "week": 1779580800,
+      "week_start": "2026-05-24",
+      "commits": 238,
+      "added": 74961,
+      "removed": 27477
+    }
+  ],
+  "by_repo": [
+    {
+      "name": "mono-core",
+      "visibility": "private",
+      "commits_30d": 1578,
+      "commits_90d": 1828,
+      "lines_added_30d": 548725,
+      "lines_removed_30d": 78726,
+      "pushed_at": "2026-05-25T01:04:31Z",
+      "stars": 0
+    },
+    {
+      "name": "browser-wallet",
+      "visibility": "private",
+      "commits_30d": 303,
+      "commits_90d": 305,
+      "lines_added_30d": 147362,
+      "lines_removed_30d": 10101,
+      "pushed_at": "2026-05-24T10:31:43Z",
+      "stars": 0
+    },
+    {
+      "name": "monoscan",
+      "visibility": "private",
+      "commits_30d": 89,
+      "commits_90d": 92,
+      "lines_added_30d": 26620,
+      "lines_removed_30d": 3240,
+      "pushed_at": "2026-05-24T08:16:22Z",
+      "stars": 0
+    },
+    {
+      "name": "lyth_mcp",
+      "visibility": "public",
+      "commits_30d": 42,
+      "commits_90d": 42,
+      "lines_added_30d": 47495,
+      "lines_removed_30d": 542,
+      "pushed_at": "2026-05-24T07:59:52Z",
+      "stars": 0
+    },
+    {
+      "name": "mono-core-sdk",
+      "visibility": "public",
+      "commits_30d": 33,
+      "commits_90d": 35,
+      "lines_added_30d": 28546,
+      "lines_removed_30d": 945,
+      "pushed_at": "2026-05-24T22:58:03Z",
+      "stars": 0
+    },
+    {
+      "name": "monolythium.com",
+      "visibility": "private",
+      "commits_30d": 28,
+      "commits_90d": 30,
+      "lines_added_30d": 13088,
+      "lines_removed_30d": 7342,
+      "pushed_at": "2026-05-25T01:01:00Z",
+      "stars": 0
+    },
+    {
+      "name": "desktop-wallet",
+      "visibility": "private",
+      "commits_30d": 28,
+      "commits_90d": 30,
+      "lines_added_30d": 12710,
+      "lines_removed_30d": 676,
+      "pushed_at": "2026-05-24T08:11:12Z",
+      "stars": 0
+    },
+    {
+      "name": "monarch-desktop",
+      "visibility": "private",
+      "commits_30d": 21,
+      "commits_90d": 23,
+      "lines_added_30d": 14891,
+      "lines_removed_30d": 2867,
+      "pushed_at": "2026-05-24T09:13:43Z",
+      "stars": 0
+    },
+    {
+      "name": "mobile-wallet",
+      "visibility": "private",
+      "commits_30d": 20,
+      "commits_90d": 22,
+      "lines_added_30d": 9272,
+      "lines_removed_30d": 329,
+      "pushed_at": "2026-05-24T08:16:23Z",
+      "stars": 0
+    },
+    {
+      "name": "whitepaper",
+      "visibility": "private",
+      "commits_30d": 18,
+      "commits_90d": 18,
+      "lines_added_30d": 9528,
+      "lines_removed_30d": 3091,
+      "pushed_at": "2026-05-17T21:15:19Z",
+      "stars": 0
+    },
+    {
+      "name": "docs",
+      "visibility": "private",
+      "commits_30d": 13,
+      "commits_90d": 13,
+      "lines_added_30d": 30779,
+      "lines_removed_30d": 4563,
+      "pushed_at": "2026-05-25T01:01:00Z",
+      "stars": 0
+    },
+    {
+      "name": "stele-desktop",
+      "visibility": "private",
+      "commits_30d": 10,
+      "commits_90d": 10,
+      "lines_added_30d": 20842,
+      "lines_removed_30d": 590,
+      "pushed_at": "2026-05-24T12:43:53Z",
+      "stars": 0
+    },
+    {
+      "name": "chain-registry",
+      "visibility": "public",
+      "commits_30d": 10,
+      "commits_90d": 10,
+      "lines_added_30d": 997,
+      "lines_removed_30d": 50,
+      "pushed_at": "2026-05-24T08:17:33Z",
+      "stars": 0
+    },
+    {
+      "name": "monarch-os-talos",
+      "visibility": "private",
+      "commits_30d": 9,
+      "commits_90d": 10,
+      "lines_added_30d": 1336,
+      "lines_removed_30d": 49,
+      "pushed_at": "2026-05-23T18:36:30Z",
+      "stars": 1
+    },
+    {
+      "name": "mono-blog-content",
+      "visibility": "public",
+      "commits_30d": 5,
+      "commits_90d": 5,
+      "lines_added_30d": 911,
+      "lines_removed_30d": 5,
+      "pushed_at": "2026-05-25T00:16:59Z",
+      "stars": 0
+    },
+    {
+      "name": "monarch-mobile",
+      "visibility": "private",
+      "commits_30d": 4,
+      "commits_90d": 4,
+      "lines_added_30d": 8151,
+      "lines_removed_30d": 6,
+      "pushed_at": "2026-05-23T18:36:28Z",
+      "stars": 0
+    },
+    {
+      "name": "designs",
+      "visibility": "private",
+      "commits_30d": 3,
+      "commits_90d": 4,
+      "lines_added_30d": 614,
+      "lines_removed_30d": 128,
+      "pushed_at": "2026-05-24T09:20:27Z",
+      "stars": 0
+    },
+    {
+      "name": ".github",
+      "visibility": "public",
+      "commits_30d": 3,
+      "commits_90d": 10,
+      "lines_added_30d": 298,
+      "lines_removed_30d": 143,
+      "pushed_at": "2026-05-23T17:41:19Z",
+      "stars": 2
+    },
+    {
+      "name": "rpc-proxy",
+      "visibility": "private",
+      "commits_30d": 1,
+      "commits_90d": 1,
+      "lines_added_30d": 182,
+      "lines_removed_30d": 0,
+      "pushed_at": "2026-05-23T20:52:32Z",
+      "stars": 0
+    },
+    {
+      "name": "monolythium-rs",
+      "visibility": "private",
+      "commits_30d": 1,
+      "commits_90d": 2,
+      "lines_added_30d": 99,
+      "lines_removed_30d": 15,
+      "pushed_at": "2026-05-23T15:58:46Z",
+      "stars": 0
+    },
+    {
+      "name": "guardian",
+      "visibility": "private",
+      "commits_30d": 0,
+      "commits_90d": 23,
+      "lines_added_30d": 0,
+      "lines_removed_30d": 0,
+      "pushed_at": "2026-04-04T19:37:24Z",
+      "stars": 0
+    },
+    {
+      "name": "api-utils",
+      "visibility": "private",
+      "commits_30d": 0,
+      "commits_90d": 9,
+      "lines_added_30d": 0,
+      "lines_removed_30d": 0,
+      "pushed_at": "2026-03-31T00:53:24Z",
+      "stars": 0
+    }
+  ],
+  "by_language": [
+    {
+      "language": "Rust",
+      "bytes": 21528715,
+      "percent": 66.9
+    },
+    {
+      "language": "TypeScript",
+      "bytes": 5842115,
+      "percent": 18.2
+    },
+    {
+      "language": "JavaScript",
+      "bytes": 2142304,
+      "percent": 6.7
+    },
+    {
+      "language": "CSS",
+      "bytes": 867668,
+      "percent": 2.7
+    },
+    {
+      "language": "Shell",
+      "bytes": 792378,
+      "percent": 2.5
+    },
+    {
+      "language": "MDX",
+      "bytes": 790003,
+      "percent": 2.5
+    },
+    {
+      "language": "Astro",
+      "bytes": 67026,
+      "percent": 0.2
+    },
+    {
+      "language": "HTML",
+      "bytes": 49084,
+      "percent": 0.2
+    },
+    {
+      "language": "TLA",
+      "bytes": 43395,
+      "percent": 0.1
+    },
+    {
+      "language": "Handlebars",
+      "bytes": 36021,
+      "percent": 0.1
+    },
+    {
+      "language": "C",
+      "bytes": 5325,
+      "percent": 0
+    },
+    {
+      "language": "Dockerfile",
+      "bytes": 4444,
+      "percent": 0
+    },
+    {
+      "language": "Makefile",
+      "bytes": 1171,
+      "percent": 0
+    }
+  ]
+}
