@@ -29,46 +29,52 @@ fi
 
 commits_7d=$(jq -r '.totals.commits_7d' "${DATA}")
 commits_30d=$(jq -r '.totals.commits_30d' "${DATA}")
-commits_90d=$(jq -r '.totals.commits_90d' "${DATA}")
+active_repos=$(jq -r '.totals.active_repos' "${DATA}")
 lines_added_30d=$(jq -r '.totals.lines_added_30d' "${DATA}")
 lines_removed_30d=$(jq -r '.totals.lines_removed_30d' "${DATA}")
-active_repos=$(jq -r '.totals.active_repos' "${DATA}")
-generated_at=$(jq -r '.generated_at' "${DATA}")
 
-# Top 5 most-active repos in the last 30 days.
+# Format big numbers compactly: 924065 → 924k, 1238710 → 1.24M
+abbr() {
+  awk -v n="$1" 'BEGIN {
+    if (n >= 1000000) printf "%.2fM", n/1000000;
+    else if (n >= 1000) printf "%dk", n/1000;
+    else printf "%d", n;
+  }'
+}
+added_abbr=$(abbr "${lines_added_30d}")
+removed_abbr=$(abbr "${lines_removed_30d}")
+commits_7d_fmt=$(printf "%'d" "${commits_7d}" 2>/dev/null || echo "${commits_7d}")
+commits_30d_fmt=$(printf "%'d" "${commits_30d}" 2>/dev/null || echo "${commits_30d}")
+
+# Top 5 most-active repos in the last 30 days, as a single dot-separated line.
 top_repos=$(jq -r '
   [.by_repo[] | select(.commits_30d > 0)] | .[0:5] |
-  map("- **\(.name)** — \(.commits_30d) commits") | join("\n")
+  map("\(.name) (\(.commits_30d))") | join(" · ")
 ' "${DATA}")
 
-# Top 3 languages.
+# Top 4 languages with percentages.
 top_langs=$(jq -r '
-  .by_language[0:3] |
-  map("\(.language) (\(.percent)%)") | join(" · ")
+  .by_language[0:4] |
+  map("\(.language) \(.percent)%") | join(" · ")
 ' "${DATA}")
 
-# Build the new block.
+# Compact, scannable block. Big numbers in a centered 4-cell HTML table;
+# repos and stack as single-line dot-separated lists; one-line disclaimer.
 {
   echo "<!-- METRICS-START -->"
   echo ""
-  echo "## Engineering activity"
+  echo "<table align=\"center\">"
+  echo "  <tr>"
+  echo "    <td align=\"center\" width=\"160\"><h2>${commits_7d_fmt}</h2><sub>commits this week</sub></td>"
+  echo "    <td align=\"center\" width=\"160\"><h2>${commits_30d_fmt}</h2><sub>this month</sub></td>"
+  echo "    <td align=\"center\" width=\"160\"><h2>+${added_abbr} −${removed_abbr}</h2><sub>lines, 30d</sub></td>"
+  echo "    <td align=\"center\" width=\"160\"><h2>${active_repos}</h2><sub>active repos</sub></td>"
+  echo "  </tr>"
+  echo "</table>"
   echo ""
-  echo "[![commits this week](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/monolythium/.github/prod/metrics/badges/commits-7d.json)](https://github.com/monolythium)"
-  echo "[![commits this month](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/monolythium/.github/prod/metrics/badges/commits-30d.json)](https://github.com/monolythium)"
-  echo "[![lines 30d](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/monolythium/.github/prod/metrics/badges/loc-delta-30d.json)](https://github.com/monolythium)"
-  echo "[![active repos](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/monolythium/.github/prod/metrics/badges/active-repos.json)](https://github.com/monolythium)"
+  echo "<p align=\"center\"><sub><b>Most active (30d)</b> · ${top_repos}<br><b>Stack</b> · ${top_langs}</sub></p>"
   echo ""
-  echo "**Trailing windows:** ${commits_7d} commits this week · ${commits_30d} this month · ${commits_90d} in the last 90 days."
-  echo ""
-  echo "**Code change (30d):** \`+${lines_added_30d} −${lines_removed_30d}\` across ${active_repos} active repositories."
-  echo ""
-  echo "**Most active (30d):**"
-  echo ""
-  echo "${top_repos}"
-  echo ""
-  echo "**Languages:** ${top_langs}"
-  echo ""
-  echo "_Aggregates only. No commit messages, file paths, branch names, or PR/issue contents are exposed. Updated nightly — last refresh ${generated_at}._"
+  echo "<p align=\"center\"><sub>Aggregates only — no commit messages, file paths, branches, hashes, or PR/issue contents. <a href=\"https://monolythium.com/github\">Live dashboard ↗</a> · updated nightly.</sub></p>"
   echo ""
   echo "<!-- METRICS-END -->"
 } >"${TMP}"

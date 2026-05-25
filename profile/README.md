@@ -1,4 +1,4 @@
-![Monolythium](https://raw.githubusercontent.com/monolythium/.github/prod/logo/monolythium/svg/Monolythium-Monolythium.svg)
+<p align="center"><img src="https://raw.githubusercontent.com/monolythium/.github/prod/logo/monolythium/svg/Monolythium-Monolythium.svg" alt="Monolythium" width="280"></p>
 
 <div align="center">
 
@@ -11,28 +11,18 @@
 
 <!-- METRICS-START -->
 
-## Engineering activity
+<table align="center">
+  <tr>
+    <td align="center" width="160"><h2>775</h2><sub>commits this week</sub></td>
+    <td align="center" width="160"><h2>2233</h2><sub>this month</sub></td>
+    <td align="center" width="160"><h2>+924k −113k</h2><sub>lines, 30d</sub></td>
+    <td align="center" width="160"><h2>22</h2><sub>active repos</sub></td>
+  </tr>
+</table>
 
-[![commits this week](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/monolythium/.github/prod/metrics/badges/commits-7d.json)](https://github.com/monolythium)
-[![commits this month](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/monolythium/.github/prod/metrics/badges/commits-30d.json)](https://github.com/monolythium)
-[![lines 30d](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/monolythium/.github/prod/metrics/badges/loc-delta-30d.json)](https://github.com/monolythium)
-[![active repos](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/monolythium/.github/prod/metrics/badges/active-repos.json)](https://github.com/monolythium)
+<p align="center"><sub><b>Most active (30d)</b> · mono-core (1588) · browser-wallet (303) · monoscan (89) · lyth_mcp (42) · mono-core-sdk (33)<br><b>Stack</b> · Rust 66.9% · TypeScript 18.2% · JavaScript 6.7% · CSS 2.7%</sub></p>
 
-**Trailing windows:** 775 commits this week · 2233 this month · 2540 in the last 90 days.
-
-**Code change (30d):** `+924065 −113552` across 22 active repositories.
-
-**Most active (30d):**
-
-- **mono-core** — 1588 commits
-- **browser-wallet** — 303 commits
-- **monoscan** — 89 commits
-- **lyth_mcp** — 42 commits
-- **mono-core-sdk** — 33 commits
-
-**Languages:** Rust (66.9%) · TypeScript (18.2%) · JavaScript (6.7%)
-
-_Aggregates only. No commit messages, file paths, branch names, or PR/issue contents are exposed. Updated nightly — last refresh 2026-05-25T01:29:52.510Z._
+<p align="center"><sub>Aggregates only — no commit messages, file paths, branches, hashes, or PR/issue contents. <a href="https://monolythium.com/github">Live dashboard ↗</a> · updated nightly.</sub></p>
 
 <!-- METRICS-END -->
 
