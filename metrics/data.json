@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-05-25T01:08:00.735Z",
+  "generated_at": "2026-05-25T01:29:52.510Z",
   "org": "monolythium",
   "window_days": 90,
   "notes": "Aggregate engineering activity. No commit messages, file paths, branch names, hashes, or PR/issue contents are exposed. Forks and archived repos excluded from totals.",
@@ -9,15 +9,15 @@
     "active_repos": 22,
     "public_repos": 5,
     "private_repos": 17,
-    "commits_7d": 761,
-    "commits_30d": 2219,
-    "commits_90d": 2526,
-    "lines_added_30d": 922446,
-    "lines_removed_30d": 113408,
-    "lines_added_90d": 1237091,
-    "lines_removed_90d": 149492,
-    "active_contributors_30d": 6,
-    "active_contributors_90d": 6
+    "commits_7d": 775,
+    "commits_30d": 2233,
+    "commits_90d": 2540,
+    "lines_added_30d": 924065,
+    "lines_removed_30d": 113552,
+    "lines_added_90d": 1238710,
+    "lines_removed_90d": 149636,
+    "active_contributors_30d": 4,
+    "active_contributors_90d": 4
   },
   "weekly": [
     {
@@ -100,20 +100,20 @@
     {
       "week": 1779580800,
       "week_start": "2026-05-24",
-      "commits": 238,
-      "added": 74961,
-      "removed": 27477
+      "commits": 252,
+      "added": 76580,
+      "removed": 27621
     }
   ],
   "by_repo": [
     {
       "name": "mono-core",
       "visibility": "private",
-      "commits_30d": 1578,
-      "commits_90d": 1828,
-      "lines_added_30d": 548725,
-      "lines_removed_30d": 78726,
-      "pushed_at": "2026-05-25T01:04:31Z",
+      "commits_30d": 1588,
+      "commits_90d": 1838,
+      "lines_added_30d": 549056,
+      "lines_removed_30d": 78867,
+      "pushed_at": "2026-05-25T01:28:56Z",
       "stars": 0
     },
     {
@@ -159,11 +159,11 @@
     {
       "name": "monolythium.com",
       "visibility": "private",
-      "commits_30d": 28,
-      "commits_90d": 30,
-      "lines_added_30d": 13088,
-      "lines_removed_30d": 7342,
-      "pushed_at": "2026-05-25T01:01:00Z",
+      "commits_30d": 29,
+      "commits_90d": 31,
+      "lines_added_30d": 13392,
+      "lines_removed_30d": 7344,
+      "pushed_at": "2026-05-25T01:12:46Z",
       "stars": 0
     },
     {
@@ -247,6 +247,16 @@
       "stars": 1
     },
     {
+      "name": ".github",
+      "visibility": "public",
+      "commits_30d": 6,
+      "commits_90d": 13,
+      "lines_added_30d": 1282,
+      "lines_removed_30d": 144,
+      "pushed_at": "2026-05-25T01:28:50Z",
+      "stars": 2
+    },
+    {
       "name": "mono-blog-content",
       "visibility": "public",
       "commits_30d": 5,
@@ -275,16 +285,6 @@
       "lines_removed_30d": 128,
       "pushed_at": "2026-05-24T09:20:27Z",
       "stars": 0
-    },
-    {
-      "name": ".github",
-      "visibility": "public",
-      "commits_30d": 3,
-      "commits_90d": 10,
-      "lines_added_30d": 298,
-      "lines_removed_30d": 143,
-      "pushed_at": "2026-05-23T17:41:19Z",
-      "stars": 2
     },
     {
       "name": "rpc-proxy",
@@ -330,17 +330,17 @@
   "by_language": [
     {
       "language": "Rust",
-      "bytes": 21528715,
+      "bytes": 21535407,
       "percent": 66.9
     },
     {
       "language": "TypeScript",
-      "bytes": 5842115,
+      "bytes": 5851289,
       "percent": 18.2
     },
     {
       "language": "JavaScript",
-      "bytes": 2142304,
+      "bytes": 2153954,
       "percent": 6.7
     },
     {
@@ -350,7 +350,7 @@
     },
     {
       "language": "Shell",
-      "bytes": 792378,
+      "bytes": 795751,
       "percent": 2.5
     },
     {
@@ -360,7 +360,7 @@
     },
     {
       "language": "Astro",
-      "bytes": 67026,
+      "bytes": 67436,
       "percent": 0.2
     },
     {

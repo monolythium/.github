@@ -18,13 +18,13 @@
 [![lines 30d](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/monolythium/.github/prod/metrics/badges/loc-delta-30d.json)](https://github.com/monolythium)
 [![active repos](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/monolythium/.github/prod/metrics/badges/active-repos.json)](https://github.com/monolythium)
 
-**Trailing windows:** 761 commits this week · 2219 this month · 2526 in the last 90 days.
+**Trailing windows:** 775 commits this week · 2233 this month · 2540 in the last 90 days.
 
-**Code change (30d):** `+922446 −113408` across 22 active repositories.
+**Code change (30d):** `+924065 −113552` across 22 active repositories.
 
 **Most active (30d):**
 
-- **mono-core** — 1578 commits
+- **mono-core** — 1588 commits
 - **browser-wallet** — 303 commits
 - **monoscan** — 89 commits
 - **lyth_mcp** — 42 commits
@@ -32,7 +32,7 @@
 
 **Languages:** Rust (66.9%) · TypeScript (18.2%) · JavaScript (6.7%)
 
-_Aggregates only. No commit messages, file paths, branch names, or PR/issue contents are exposed. Updated nightly — last refresh 2026-05-25T01:08:00.735Z._
+_Aggregates only. No commit messages, file paths, branch names, or PR/issue contents are exposed. Updated nightly — last refresh 2026-05-25T01:29:52.510Z._
 
 <!-- METRICS-END -->
 
