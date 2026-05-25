@@ -16,10 +16,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
       - name: Collect aggregate metrics
         env:
           GH_TOKEN: ${{ secrets.ORG_METRICS_PAT }}
-        run: bash scripts/collect-metrics.sh monolythium
+        run: node scripts/collect-metrics.mjs monolythium
 
       - name: Inject metrics block into profile README
         run: bash scripts/inject-readme-metrics.sh
