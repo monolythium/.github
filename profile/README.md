@@ -55,7 +55,10 @@ Monarch CLI, or the old Monoscan have been frozen under
 | [lyth_mcp](https://github.com/monolythium/lyth_mcp) | MCP server for live-chain reads, agent runbooks, and local agent wallets. |
 | [monoscan](https://github.com/monolythium/monoscan) | Canonical explorer for `testnet-69420`. |
 | [browser-wallet](https://github.com/monolythium/browser-wallet) | MV3 browser extension (Chrome / Firefox / Brave) — PQM-1 / ML-DSA-65 keystore, EIP-1193 provider. Preview. |
+| [desktop-wallet](https://github.com/monolythium/desktop-wallet) | Tauri 2 + Rust + React 19 desktop wallet — OS-keychain vault, Ledger hardware signer, Operations drawer. Preview. |
+| [mobile-wallet](https://github.com/monolythium/mobile-wallet) | Tauri 2 iOS + Android wallet. Preview. |
 | [monarch-desktop](https://github.com/monolythium/monarch-desktop) | Operator console for Monolythium nodes and clusters — Tauri 2 + Rust + React 19 + native Talos API mTLS client. Preview. |
+| [monarch-mobile](https://github.com/monolythium/monarch-mobile) | Phone companion for Monarch OS and Monarch Desktop. Preview. |
 | [monarch-os-talos](https://github.com/monolythium/monarch-os-talos) | Talos-based immutable node OS for Monolythium operator nodes — auditable source, signed-release pipeline in flight. |
 | [protocore](https://github.com/monolythium/protocore) | Signed binary releases for the Monolythium protocore node. Source remains private until mainnet (BSL-1.1 commitment). |
 | [mono-blog-content](https://github.com/monolythium/mono-blog-content) | Markdown source for `monolythium.com/blog` posts. |
@@ -68,14 +71,9 @@ Monarch CLI, or the old Monoscan have been frozen under
 | [mono-core](https://github.com/monolythium/mono-core) | Core node, consensus, runtime, execution, networking, and indexer workspace. Opens under BSL-1.1 at mainnet. |
 | [docs](https://github.com/monolythium/docs) | Source for `docs.monolythium.com` — developer, operator, and agent documentation. |
 | [monolythium.com](https://github.com/monolythium/monolythium.com) | Source for the public marketing site. |
-| [desktop-wallet](https://github.com/monolythium/desktop-wallet) | Tauri 2 + React 19 desktop wallet. |
-| [mobile-wallet](https://github.com/monolythium/mobile-wallet) | Tauri 2 iOS + Android wallet. |
-| [monarch-mobile](https://github.com/monolythium/monarch-mobile) | Phone companion for Monarch OS and Monarch Desktop. |
 | [whitepaper](https://github.com/monolythium/whitepaper) | Protocol whitepaper and lightpaper drafts. |
 | [designs](https://github.com/monolythium/designs) | Design archive and product prototypes. |
-| [monolythium-rs](https://github.com/monolythium/monolythium-rs) | Legacy-compatible Rust crates; new integrations should use `mono-core-sdk`. |
 | [guardian](https://github.com/monolythium/guardian) | Autonomous security monitoring pipeline. |
-| [api-utils](https://github.com/monolythium/api-utils) | Shared stateless utilities for ecosystem Express APIs. |
 | [rpc-proxy](https://github.com/monolythium/rpc-proxy) | TLS-terminating reverse proxy for `rpc.monolythium.com`. |
 
 ---
