@@ -85,6 +85,9 @@ Monarch CLI, or the old Monoscan have been frozen under
 | Network | Chain ID | Status | Source |
 |---------|---------:|--------|--------|
 | `testnet-69420` | `69420` | Live development testnet | [`chains/testnet-69420.toml`](https://github.com/monolythium/chain-registry/blob/master/chains/testnet-69420.toml) |
+| `mainnet-69422` | `69422` | Reserved · genesis hash and launch date not announced | [`chains/mainnet-69422.toml`](https://github.com/monolythium/chain-registry/blob/master/chains/mainnet-69422.toml) |
+
+No mainnet network is running on the reserved chain id today. Do not connect production wallets to anything claiming to be Monolythium mainnet until the registry publishes the matching `genesis_hash`.
 
 Quick registry check:
 
