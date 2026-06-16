@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-15T07:52:23.042Z",
+  "generated_at": "2026-06-16T07:53:45.457Z",
   "org": "monolythium",
   "window_days": 90,
   "notes": "Aggregate engineering activity. No commit messages, file paths, branch names, hashes, or PR/issue contents are exposed. Forks and archived repos excluded from totals.",
@@ -9,13 +9,13 @@
     "active_repos": 26,
     "public_repos": 18,
     "private_repos": 8,
-    "commits_7d": 401,
-    "commits_30d": 2684,
-    "commits_90d": 4072,
-    "lines_added_30d": 7087533,
-    "lines_removed_30d": 780232,
-    "lines_added_90d": 7931443,
-    "lines_removed_90d": 874897,
+    "commits_7d": 433,
+    "commits_30d": 2586,
+    "commits_90d": 4131,
+    "lines_added_30d": 7038739,
+    "lines_removed_30d": 779925,
+    "lines_added_90d": 7943337,
+    "lines_removed_90d": 877265,
     "active_contributors_30d": 5,
     "active_contributors_90d": 6
   },
@@ -93,80 +93,80 @@
     {
       "week": 1781395200,
       "week_start": "2026-06-14",
-      "commits": 63,
-      "added": 17951,
-      "removed": 3111
+      "commits": 122,
+      "added": 29845,
+      "removed": 5479
     }
   ],
   "by_repo": [
     {
       "name": "mono-core",
       "visibility": "private",
-      "commits_30d": 984,
-      "commits_90d": 2037,
-      "lines_added_30d": 349219,
-      "lines_removed_30d": 152964,
-      "pushed_at": "2026-06-15T07:17:13Z",
+      "commits_30d": 866,
+      "commits_90d": 2043,
+      "lines_added_30d": 322974,
+      "lines_removed_30d": 151799,
+      "pushed_at": "2026-06-15T23:02:59Z",
       "stars": 0
     },
     {
       "name": "browser-wallet",
       "visibility": "public",
-      "commits_30d": 609,
-      "commits_90d": 819,
-      "lines_added_30d": 131804,
-      "lines_removed_30d": 31532,
-      "pushed_at": "2026-06-15T06:19:17Z",
+      "commits_30d": 613,
+      "commits_90d": 855,
+      "lines_added_30d": 105172,
+      "lines_removed_30d": 32040,
+      "pushed_at": "2026-06-15T22:59:55Z",
       "stars": 0
     },
     {
       "name": "mono-core-sdk",
       "visibility": "public",
-      "commits_30d": 196,
-      "commits_90d": 223,
-      "lines_added_30d": 202427,
-      "lines_removed_30d": 43491,
-      "pushed_at": "2026-06-12T02:50:43Z",
+      "commits_30d": 198,
+      "commits_90d": 225,
+      "lines_added_30d": 203144,
+      "lines_removed_30d": 43547,
+      "pushed_at": "2026-06-16T00:25:46Z",
       "stars": 0
     },
     {
       "name": "desktop-wallet",
       "visibility": "public",
-      "commits_30d": 168,
-      "commits_90d": 181,
-      "lines_added_30d": 53407,
-      "lines_removed_30d": 8934,
-      "pushed_at": "2026-06-15T00:23:47Z",
+      "commits_30d": 170,
+      "commits_90d": 183,
+      "lines_added_30d": 53529,
+      "lines_removed_30d": 8941,
+      "pushed_at": "2026-06-16T00:52:36Z",
       "stars": 0
     },
     {
       "name": "monoscan",
       "visibility": "public",
-      "commits_30d": 143,
+      "commits_30d": 142,
       "commits_90d": 170,
-      "lines_added_30d": 42072,
-      "lines_removed_30d": 7510,
+      "lines_added_30d": 41574,
+      "lines_removed_30d": 7403,
       "pushed_at": "2026-06-14T00:40:11Z",
       "stars": 0
     },
     {
       "name": "monarch-desktop",
       "visibility": "public",
-      "commits_30d": 127,
-      "commits_90d": 127,
-      "lines_added_30d": 109368,
-      "lines_removed_30d": 7455,
-      "pushed_at": "2026-06-14T22:36:16Z",
+      "commits_30d": 136,
+      "commits_90d": 136,
+      "lines_added_30d": 112759,
+      "lines_removed_30d": 7743,
+      "pushed_at": "2026-06-16T01:24:02Z",
       "stars": 0
     },
     {
       "name": "mobile-wallet",
       "visibility": "public",
-      "commits_30d": 81,
-      "commits_90d": 92,
-      "lines_added_30d": 21009,
-      "lines_removed_30d": 5381,
-      "pushed_at": "2026-06-15T00:20:20Z",
+      "commits_30d": 83,
+      "commits_90d": 94,
+      "lines_added_30d": 21220,
+      "lines_removed_30d": 5395,
+      "pushed_at": "2026-06-16T00:52:27Z",
       "stars": 0
     },
     {
@@ -182,11 +182,11 @@
     {
       "name": "monarch-os-talos",
       "visibility": "public",
-      "commits_30d": 72,
-      "commits_90d": 80,
-      "lines_added_30d": 25292,
-      "lines_removed_30d": 1546,
-      "pushed_at": "2026-06-14T11:32:53Z",
+      "commits_30d": 73,
+      "commits_90d": 81,
+      "lines_added_30d": 25350,
+      "lines_removed_30d": 1549,
+      "pushed_at": "2026-06-15T21:28:56Z",
       "stars": 1
     },
     {
@@ -212,11 +212,11 @@
     {
       "name": ".github",
       "visibility": "public",
-      "commits_30d": 32,
-      "commits_90d": 32,
-      "lines_added_30d": 3570,
-      "lines_removed_30d": 2387,
-      "pushed_at": "2026-06-14T07:33:12Z",
+      "commits_30d": 33,
+      "commits_90d": 33,
+      "lines_added_30d": 3652,
+      "lines_removed_30d": 2476,
+      "pushed_at": "2026-06-15T07:52:24Z",
       "stars": 2
     },
     {
@@ -246,7 +246,7 @@
       "commits_90d": 11,
       "lines_added_30d": 473,
       "lines_removed_30d": 27,
-      "pushed_at": "2026-06-14T11:24:49Z",
+      "pushed_at": "2026-06-15T21:25:28Z",
       "stars": 0
     },
     {
@@ -363,13 +363,13 @@
   "by_language": [
     {
       "language": "Rust",
-      "bytes": 24867802,
-      "percent": 57.4
+      "bytes": 24969364,
+      "percent": 57.3
     },
     {
       "language": "TypeScript",
-      "bytes": 11225058,
-      "percent": 25.9
+      "bytes": 11411355,
+      "percent": 26.2
     },
     {
       "language": "JavaScript",
@@ -379,17 +379,17 @@
     {
       "language": "Shell",
       "bytes": 1502841,
-      "percent": 3.5
+      "percent": 3.4
     },
     {
       "language": "CSS",
-      "bytes": 1123221,
+      "bytes": 1123243,
       "percent": 2.6
     },
     {
       "language": "MDX",
       "bytes": 1108482,
-      "percent": 2.6
+      "percent": 2.5
     },
     {
       "language": "HTML",
@@ -404,7 +404,7 @@
     {
       "language": "Astro",
       "bytes": 108579,
-      "percent": 0.3
+      "percent": 0.2
     },
     {
       "language": "TLA",
