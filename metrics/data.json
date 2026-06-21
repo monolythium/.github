@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-20T07:17:58.064Z",
+  "generated_at": "2026-06-21T07:35:49.832Z",
   "org": "monolythium",
   "window_days": 90,
   "notes": "Aggregate engineering activity. No commit messages, file paths, branch names, hashes, or PR/issue contents are exposed. Forks and archived repos excluded from totals.",
@@ -9,13 +9,13 @@
     "active_repos": 26,
     "public_repos": 19,
     "private_repos": 7,
-    "commits_7d": 254,
-    "commits_30d": 2498,
-    "commits_90d": 4218,
-    "lines_added_30d": 939909,
-    "lines_removed_30d": 299440,
-    "lines_added_90d": 1932190,
-    "lines_removed_90d": 402607,
+    "commits_7d": 222,
+    "commits_30d": 2507,
+    "commits_90d": 4227,
+    "lines_added_30d": 940669,
+    "lines_removed_30d": 299584,
+    "lines_added_90d": 1932950,
+    "lines_removed_90d": 402751,
     "active_contributors_30d": 5,
     "active_contributors_90d": 6
   },
@@ -93,20 +93,20 @@
     {
       "week": 1781395200,
       "week_start": "2026-06-14",
-      "commits": 213,
-      "added": 48482,
-      "removed": 7124
+      "commits": 222,
+      "added": 49242,
+      "removed": 7268
     }
   ],
   "by_repo": [
     {
       "name": "mono-core",
       "visibility": "private",
-      "commits_30d": 768,
-      "commits_90d": 2080,
-      "lines_added_30d": 291765,
-      "lines_removed_30d": 147833,
-      "pushed_at": "2026-06-20T07:10:17Z",
+      "commits_30d": 769,
+      "commits_90d": 2081,
+      "lines_added_30d": 292172,
+      "lines_removed_30d": 147865,
+      "pushed_at": "2026-06-20T21:15:03Z",
       "stars": 0
     },
     {
@@ -116,17 +116,17 @@
       "commits_90d": 865,
       "lines_added_30d": 106217,
       "lines_removed_30d": 32202,
-      "pushed_at": "2026-06-20T05:54:22Z",
+      "pushed_at": "2026-06-20T17:15:31Z",
       "stars": 0
     },
     {
       "name": "mono-core-sdk",
       "visibility": "public",
-      "commits_30d": 196,
-      "commits_90d": 226,
-      "lines_added_30d": 190750,
-      "lines_removed_30d": 43551,
-      "pushed_at": "2026-06-19T06:01:41Z",
+      "commits_30d": 197,
+      "commits_90d": 227,
+      "lines_added_30d": 190753,
+      "lines_removed_30d": 43554,
+      "pushed_at": "2026-06-20T08:11:50Z",
       "stars": 0
     },
     {
@@ -142,11 +142,11 @@
     {
       "name": "monarch-desktop",
       "visibility": "public",
-      "commits_30d": 152,
-      "commits_90d": 152,
-      "lines_added_30d": 119398,
-      "lines_removed_30d": 8105,
-      "pushed_at": "2026-06-18T04:51:28Z",
+      "commits_30d": 154,
+      "commits_90d": 154,
+      "lines_added_30d": 119515,
+      "lines_removed_30d": 8120,
+      "pushed_at": "2026-06-20T10:18:09Z",
       "stars": 0
     },
     {
@@ -170,6 +170,16 @@
       "stars": 0
     },
     {
+      "name": "monarch-os-talos",
+      "visibility": "public",
+      "commits_30d": 77,
+      "commits_90d": 85,
+      "lines_added_30d": 25641,
+      "lines_removed_30d": 1611,
+      "pushed_at": "2026-06-20T10:05:27Z",
+      "stars": 1
+    },
+    {
       "name": "monolythium.com",
       "visibility": "private",
       "commits_30d": 76,
@@ -180,33 +190,23 @@
       "stars": 0
     },
     {
-      "name": "monarch-os-talos",
-      "visibility": "public",
-      "commits_30d": 75,
-      "commits_90d": 83,
-      "lines_added_30d": 25486,
-      "lines_removed_30d": 1594,
-      "pushed_at": "2026-06-19T05:57:17Z",
-      "stars": 1
-    },
-    {
       "name": "chain-registry",
       "visibility": "public",
-      "commits_30d": 73,
-      "commits_90d": 78,
-      "lines_added_30d": 3496,
-      "lines_removed_30d": 1780,
-      "pushed_at": "2026-06-19T20:32:06Z",
+      "commits_30d": 75,
+      "commits_90d": 80,
+      "lines_added_30d": 3538,
+      "lines_removed_30d": 1821,
+      "pushed_at": "2026-06-20T21:39:38Z",
       "stars": 0
     },
     {
       "name": ".github",
       "visibility": "public",
-      "commits_30d": 37,
-      "commits_90d": 37,
-      "lines_added_30d": 3961,
-      "lines_removed_30d": 2785,
-      "pushed_at": "2026-06-19T07:48:40Z",
+      "commits_30d": 38,
+      "commits_90d": 38,
+      "lines_added_30d": 3997,
+      "lines_removed_30d": 2821,
+      "pushed_at": "2026-06-20T07:17:58Z",
       "stars": 2
     },
     {
@@ -246,7 +246,7 @@
       "commits_90d": 12,
       "lines_added_30d": 481,
       "lines_removed_30d": 27,
-      "pushed_at": "2026-06-18T23:13:14Z",
+      "pushed_at": "2026-06-20T21:15:18Z",
       "stars": 0
     },
     {
@@ -363,12 +363,12 @@
   "by_language": [
     {
       "language": "Rust",
-      "bytes": 25424202,
-      "percent": 58
+      "bytes": 25441590,
+      "percent": 58.1
     },
     {
       "language": "TypeScript",
-      "bytes": 11643334,
+      "bytes": 11647591,
       "percent": 26.6
     },
     {
