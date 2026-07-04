@@ -1,32 +1,25 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-03T08:50:30.368Z",
+  "generated_at": "2026-07-04T08:25:30.959Z",
   "org": "monolythium",
   "window_days": 90,
   "notes": "Aggregate engineering activity. No commit messages, file paths, branch names, hashes, or PR/issue contents are exposed. Forks and archived repos excluded from totals.",
   "totals": {
     "repos": 25,
-    "active_repos": 25,
-    "public_repos": 18,
+    "active_repos": 24,
+    "public_repos": 17,
     "private_repos": 7,
-    "commits_7d": 332,
-    "commits_30d": 1561,
-    "commits_90d": 4890,
-    "lines_added_30d": 504595,
-    "lines_removed_30d": 228797,
-    "lines_added_90d": 2087131,
-    "lines_removed_90d": 544796,
+    "commits_7d": 366,
+    "commits_30d": 1535,
+    "commits_90d": 4924,
+    "lines_added_30d": 464627,
+    "lines_removed_30d": 239812,
+    "lines_added_90d": 2093142,
+    "lines_removed_90d": 571525,
     "active_contributors_30d": 4,
     "active_contributors_90d": 6
   },
   "weekly": [
-    {
-      "week": 1774742400,
-      "week_start": "2026-03-29",
-      "commits": 1,
-      "added": 1,
-      "removed": 2
-    },
     {
       "week": 1775952000,
       "week_start": "2026-04-12",
@@ -79,8 +72,8 @@
     {
       "week": 1780185600,
       "week_start": "2026-05-31",
-      "commits": 604,
-      "added": 281977,
+      "commits": 603,
+      "added": 280461,
       "removed": 80752
     },
     {
@@ -107,160 +100,160 @@
     {
       "week": 1782604800,
       "week_start": "2026-06-28",
-      "commits": 281,
-      "added": 55788,
-      "removed": 35317
+      "commits": 317,
+      "added": 63316,
+      "removed": 62048
     }
   ],
   "by_repo": [
     {
       "name": "browser-wallet",
       "visibility": "public",
-      "commits_30d": 516,
-      "commits_90d": 1135,
-      "lines_added_30d": 77505,
-      "lines_removed_30d": 21277,
-      "pushed_at": "2026-07-03T08:19:12Z",
+      "commits_30d": 507,
+      "commits_90d": 1139,
+      "lines_added_30d": 76234,
+      "lines_removed_30d": 19842,
+      "pushed_at": "2026-07-04T07:25:35Z",
       "stars": 1
     },
     {
       "name": "mono-core",
       "visibility": "private",
-      "commits_30d": 412,
-      "commits_90d": 2283,
-      "lines_added_30d": 178712,
-      "lines_removed_30d": 142007,
-      "pushed_at": "2026-07-03T08:19:02Z",
+      "commits_30d": 411,
+      "commits_90d": 2295,
+      "lines_added_30d": 164248,
+      "lines_removed_30d": 158209,
+      "pushed_at": "2026-07-04T02:10:14Z",
       "stars": 0
     },
     {
       "name": "monarch-desktop",
       "visibility": "public",
-      "commits_30d": 179,
-      "commits_90d": 179,
-      "lines_added_30d": 124050,
-      "lines_removed_30d": 12017,
-      "pushed_at": "2026-07-02T10:44:12Z",
+      "commits_30d": 180,
+      "commits_90d": 180,
+      "lines_added_30d": 124061,
+      "lines_removed_30d": 12028,
+      "pushed_at": "2026-07-04T08:00:46Z",
       "stars": 0
     },
     {
       "name": "mono-core-sdk",
       "visibility": "public",
-      "commits_30d": 77,
-      "commits_90d": 256,
-      "lines_added_30d": 43258,
-      "lines_removed_30d": 29645,
-      "pushed_at": "2026-07-02T10:40:04Z",
+      "commits_30d": 78,
+      "commits_90d": 258,
+      "lines_added_30d": 40908,
+      "lines_removed_30d": 29743,
+      "pushed_at": "2026-07-04T03:05:35Z",
       "stars": 0
     },
     {
       "name": "monarch-os-talos",
       "visibility": "public",
-      "commits_30d": 73,
-      "commits_90d": 101,
-      "lines_added_30d": 4381,
-      "lines_removed_30d": 7400,
-      "pushed_at": "2026-07-02T10:33:41Z",
+      "commits_30d": 75,
+      "commits_90d": 103,
+      "lines_added_30d": 4445,
+      "lines_removed_30d": 7510,
+      "pushed_at": "2026-07-04T08:07:46Z",
       "stars": 1
     },
     {
       "name": "chain-registry",
       "visibility": "public",
       "commits_30d": 69,
-      "commits_90d": 109,
-      "lines_added_30d": 2676,
-      "lines_removed_30d": 1931,
-      "pushed_at": "2026-07-02T10:29:32Z",
-      "stars": 0
-    },
-    {
-      "name": "desktop-wallet",
-      "visibility": "public",
-      "commits_30d": 51,
-      "commits_90d": 204,
-      "lines_added_30d": 23020,
-      "lines_removed_30d": 6081,
-      "pushed_at": "2026-07-02T10:52:38Z",
+      "commits_90d": 111,
+      "lines_added_30d": 2672,
+      "lines_removed_30d": 1934,
+      "pushed_at": "2026-07-04T02:42:45Z",
       "stars": 0
     },
     {
       "name": "docs",
       "visibility": "private",
-      "commits_30d": 42,
-      "commits_90d": 42,
-      "lines_added_30d": 32468,
-      "lines_removed_30d": 1372,
-      "pushed_at": "2026-07-02T10:33:38Z",
+      "commits_30d": 44,
+      "commits_90d": 44,
+      "lines_added_30d": 32499,
+      "lines_removed_30d": 1401,
+      "pushed_at": "2026-07-04T03:04:40Z",
+      "stars": 0
+    },
+    {
+      "name": "desktop-wallet",
+      "visibility": "public",
+      "commits_30d": 32,
+      "commits_90d": 205,
+      "lines_added_30d": 5018,
+      "lines_removed_30d": 2187,
+      "pushed_at": "2026-07-04T08:08:08Z",
       "stars": 0
     },
     {
       "name": ".github",
       "visibility": "public",
       "commits_30d": 30,
-      "commits_90d": 50,
-      "lines_added_30d": 2681,
-      "lines_removed_30d": 2637,
-      "pushed_at": "2026-07-02T07:05:57Z",
+      "commits_90d": 51,
+      "lines_added_30d": 2698,
+      "lines_removed_30d": 2654,
+      "pushed_at": "2026-07-03T08:50:31Z",
       "stars": 2
     },
     {
       "name": "monoscan",
       "visibility": "public",
-      "commits_30d": 23,
-      "commits_90d": 177,
-      "lines_added_30d": 4292,
-      "lines_removed_30d": 1037,
-      "pushed_at": "2026-07-02T10:44:36Z",
-      "stars": 0
-    },
-    {
-      "name": "mobile-wallet",
-      "visibility": "public",
-      "commits_30d": 18,
-      "commits_90d": 100,
-      "lines_added_30d": 2978,
-      "lines_removed_30d": 1616,
-      "pushed_at": "2026-07-02T10:44:31Z",
+      "commits_30d": 22,
+      "commits_90d": 178,
+      "lines_added_30d": 4227,
+      "lines_removed_30d": 1030,
+      "pushed_at": "2026-07-03T19:57:26Z",
       "stars": 0
     },
     {
       "name": "lyth_mcp",
       "visibility": "public",
-      "commits_30d": 16,
-      "commits_90d": 64,
-      "lines_added_30d": 1423,
-      "lines_removed_30d": 376,
-      "pushed_at": "2026-07-02T10:37:02Z",
+      "commits_30d": 19,
+      "commits_90d": 67,
+      "lines_added_30d": 1432,
+      "lines_removed_30d": 385,
+      "pushed_at": "2026-07-04T03:04:32Z",
+      "stars": 0
+    },
+    {
+      "name": "mobile-wallet",
+      "visibility": "public",
+      "commits_30d": 15,
+      "commits_90d": 101,
+      "lines_added_30d": 2970,
+      "lines_removed_30d": 1608,
+      "pushed_at": "2026-07-03T19:57:23Z",
       "stars": 0
     },
     {
       "name": "monolythium.com",
       "visibility": "private",
-      "commits_30d": 14,
+      "commits_30d": 12,
       "commits_90d": 94,
-      "lines_added_30d": 248,
-      "lines_removed_30d": 124,
+      "lines_added_30d": 170,
+      "lines_removed_30d": 60,
       "pushed_at": "2026-06-28T20:15:12Z",
-      "stars": 0
-    },
-    {
-      "name": "public-whitepaper",
-      "visibility": "public",
-      "commits_30d": 13,
-      "commits_90d": 21,
-      "lines_added_30d": 663,
-      "lines_removed_30d": 380,
-      "pushed_at": "2026-07-02T01:24:54Z",
       "stars": 0
     },
     {
       "name": "protocore",
       "visibility": "public",
-      "commits_30d": 7,
-      "commits_90d": 14,
-      "lines_added_30d": 35,
-      "lines_removed_30d": 15,
-      "pushed_at": "2026-07-03T08:20:16Z",
+      "commits_30d": 11,
+      "commits_90d": 18,
+      "lines_added_30d": 385,
+      "lines_removed_30d": 27,
+      "pushed_at": "2026-07-04T02:10:21Z",
+      "stars": 0
+    },
+    {
+      "name": "public-whitepaper",
+      "visibility": "public",
+      "commits_30d": 11,
+      "commits_90d": 21,
+      "lines_added_30d": 580,
+      "lines_removed_30d": 312,
+      "pushed_at": "2026-07-02T01:24:54Z",
       "stars": 0
     },
     {
@@ -304,26 +297,6 @@
       "stars": 0
     },
     {
-      "name": "pq-bridge-core",
-      "visibility": "public",
-      "commits_30d": 1,
-      "commits_90d": 1,
-      "lines_added_30d": 1516,
-      "lines_removed_30d": 0,
-      "pushed_at": "2026-06-04T00:17:38Z",
-      "stars": 0
-    },
-    {
-      "name": "lythiumseal",
-      "visibility": "public",
-      "commits_30d": 1,
-      "commits_90d": 1,
-      "lines_added_30d": 2609,
-      "lines_removed_30d": 0,
-      "pushed_at": "2026-06-03T19:06:31Z",
-      "stars": 1
-    },
-    {
       "name": "mono-studio",
       "visibility": "public",
       "commits_30d": 0,
@@ -332,6 +305,16 @@
       "lines_removed_30d": 0,
       "pushed_at": "2026-06-04T13:58:18Z",
       "stars": 0
+    },
+    {
+      "name": "lythiumseal",
+      "visibility": "public",
+      "commits_30d": 0,
+      "commits_90d": 1,
+      "lines_added_30d": 0,
+      "lines_removed_30d": 0,
+      "pushed_at": "2026-06-03T19:06:31Z",
+      "stars": 1
     },
     {
       "name": "monarch-mobile",
@@ -357,7 +340,7 @@
       "name": "guardian",
       "visibility": "private",
       "commits_30d": 0,
-      "commits_90d": 1,
+      "commits_90d": 0,
       "lines_added_30d": 0,
       "lines_removed_30d": 0,
       "pushed_at": "2026-04-04T19:37:24Z",
@@ -367,28 +350,28 @@
   "by_language": [
     {
       "language": "Rust",
-      "bytes": 25524990,
-      "percent": 57.5
+      "bytes": 24719372,
+      "percent": 56.7
     },
     {
       "language": "TypeScript",
-      "bytes": 12309252,
-      "percent": 27.7
+      "bytes": 12309866,
+      "percent": 28.2
     },
     {
       "language": "JavaScript",
       "bytes": 2103833,
-      "percent": 4.7
+      "percent": 4.8
     },
     {
       "language": "Shell",
-      "bytes": 1333778,
-      "percent": 3
+      "bytes": 1357109,
+      "percent": 3.1
     },
     {
       "language": "MDX",
-      "bytes": 1123466,
-      "percent": 2.5
+      "bytes": 1125241,
+      "percent": 2.6
     },
     {
       "language": "CSS",
@@ -398,7 +381,7 @@
     {
       "language": "HTML",
       "bytes": 639949,
-      "percent": 1.4
+      "percent": 1.5
     },
     {
       "language": "Astro",
