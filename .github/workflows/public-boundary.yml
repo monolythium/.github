@@ -1,0 +1,43 @@
+name: Public repository boundary
+
+on:
+  pull_request:
+  push:
+    branches: [prod]
+
+permissions:
+  contents: read
+
+jobs:
+  boundary:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - name: Reject private metrics and document artifacts
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          forbidden_paths=(
+            metrics/data.json
+            scripts/collect-metrics.mjs
+            scripts/inject-readme-metrics.sh
+            .github/workflows/metrics.yml
+          )
+
+          for path in "${forbidden_paths[@]}"; do
+            if [[ -e "$path" ]]; then
+              echo "Forbidden public artifact: $path" >&2
+              exit 1
+            fi
+          done
+
+          document=$(find . -path ./.git -prune -o -type f \
+            \( -iname '*.doc' -o -iname '*.docx' -o -iname '*.pdf' \
+            -o -iname '*.ppt' -o -iname '*.pptx' -o -iname '*.xls' \
+            -o -iname '*.xlsx' \) -print -quit)
+          if [[ -n "$document" ]]; then
+            echo "Office/PDF artifacts are not permitted in this public repository." >&2
+            exit 1
+          fi
