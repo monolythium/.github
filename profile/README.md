@@ -13,14 +13,14 @@
 
 <table align="center">
   <tr>
-    <td align="center" width="160"><h2>20</h2><sub>commits this week</sub></td>
-    <td align="center" width="160"><h2>919</h2><sub>this month</sub></td>
-    <td align="center" width="160"><h2>+208k −184k</h2><sub>lines, 30d</sub></td>
+    <td align="center" width="160"><h2>33</h2><sub>commits this week</sub></td>
+    <td align="center" width="160"><h2>597</h2><sub>this month</sub></td>
+    <td align="center" width="160"><h2>+160k −174k</h2><sub>lines, 30d</sub></td>
     <td align="center" width="160"><h2>24</h2><sub>active repos</sub></td>
   </tr>
 </table>
 
-<p align="center"><sub><b>Most active (30d)</b> · browser-wallet (310) · mono-core (288) · monarch-desktop (57) · chain-registry (45) · mono-core-sdk (38)<br><b>Stack</b> · Rust 56.9% · TypeScript 28.1% · JavaScript 4.8% · Shell 3.1%</sub></p>
+<p align="center"><sub><b>Most active (30d)</b> · mono-core (287) · monarch-desktop (51) · chain-registry (45) · mono-core-sdk (37) · desktop-wallet (26)<br><b>Stack</b> · Rust 63.3% · TypeScript 20% · JavaScript 5.4% · Shell 3.4%</sub></p>
 
 <p align="center"><sub>Aggregates only — no commit messages, file paths, branches, hashes, or PR/issue contents. <a href="https://monolythium.com/github">Live dashboard ↗</a> · updated nightly.</sub></p>
 
